@@ -20,8 +20,13 @@ php artisan key:generate
 ```
 php artisan jwt:secret
 ```
+> Запускаем миграцию
+```
+php artisan migrate --seed
+```
+
 ---
-> Даём права на запись:
+> Даём права на запись для LINUX:
 ```
 sudo chown -R www-data.www-data /var/www/laravel-api/storage
 sudo chown -R www-data.www-data /var/www/laravel-api/bootstrap/cache
